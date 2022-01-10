@@ -1,0 +1,26 @@
+{
+  "name": "restaurant-page",
+  "version": "1.0.0",
+  "description": "Dynamically-generated restaurant page",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack",
+    "watch": "webpack --watch",
+    "start": "webpack serve --open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xewar/restaurant-page.git"
+  },
+  "author": "xewar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/xewar/restaurant-page/issues"
+  },
+  "homepage": "https://github.com/xewar/restaurant-page#readme",
+  "devDependencies": {
+    "webpack-cli": "^4.9.1",
+    "webpack-dev-server": "^4.7.2"
+  }
+}
