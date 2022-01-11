@@ -1,0 +1,95 @@
+/* COLOR PALETTE */
+:root {
+    --dark_blue: #065b91CC;
+    --light_blue: #44acd3AA;
+    --lighter_blue: #86c2cc;
+    --brown: #b68669;
+}
+@font-face {
+    font-family: 'Alegreya Sans';
+    src: url('./alegreyasans/AlegreyaSans-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Alegreya Sans';
+    src: url('./alegreyasans/AlegreyaSans-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Alegreya Sans';
+    src: url('./alegreyasans/AlegreyaSans-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Alegreya Sans';
+    src: url('./alegreyasans/AlegreyaSans-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style:normal;
+}
+@font-face {
+    font-family: 'Alegreya Sans';
+    src: url('./alegreyasans/AlegreyaSans-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style:normal;
+}
+html{
+    height: 100%;
+}
+body{
+    height: 100%;
+    margin: 0;
+    display:flex;
+    flex-direction: column;
+    /* box-sizing: border-box; */
+    color: var(--lighter_blue);
+    background: var(--lighter_blue);
+    font-family: 'Alegreya Sans';
+}
+#header{
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    margin: 0;
+    height: 68px;
+}
+h1 {
+    display: flex;
+    padding-top: 3px;
+    margin: 0;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 60px;
+    margin-left: 20px;
+}
+#tabs{
+    display: flex;
+    margin-top: 0;
+    margin-left: 60px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 30px;
+    flex-grow: 1;
+}
+button{
+    border:none;
+    background-color: white;
+    color: var(--lighter_blue);
+    font-family: 'Alegreya Sans';
+    font-weight: 300;
+    text-transform: uppercase;
+    height: 75px;
+    font-size: 20px;
+    padding: 16px;
+    border: 8px solid var(--lighter_blue);
+};
+
+#content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    flex: 1;
+    background: url('./icon.png');
+}
