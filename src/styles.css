@@ -78,18 +78,31 @@ button{
     background-color: white;
     color: var(--lighter_blue);
     font-family: 'Alegreya Sans';
-    font-weight: 300;
+    font-weight: 500;
     text-transform: uppercase;
-    height: 75px;
+    height: 68px;
     font-size: 20px;
-    padding: 16px;
-    border: 8px solid var(--lighter_blue);
+    padding: 14px;
+    border: 2px solid var(--lighter_blue);
+    border-bottom: none;
 };
-
+#left{
+    display:flex;
+}
 #content{
     display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    flex: 1;
-    background: url('./icon.png');
+    justify-content: flex-start;
+    gap: 2px;
+    /* flex: 1; */
+}
+#container{
+    display: flex;
+    border-top: solid 2px var(--lighter_blue);
+    background-color: white;
+    width: 50%;
+    height: 270px;
+    padding: 60px 14px;
+    /* font-weight: 300; */
+    font-size: large;
+    color: var(--dark_blue);
 }
