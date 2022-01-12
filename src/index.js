@@ -1,8 +1,8 @@
 import './styles.css';
 import Icon from './images/icon.png';
-import chickenR from './images/BW/chicken.jpg';
+import {welcomeTab} from './welcome.js'
 
-//Creating the header and tabs
+//Creating the header, top navigation, and footer
 let header = document.querySelector('#header');
 let zaad = document.createElement('h1');
 zaad.textContent = 'Zaad';
@@ -17,7 +17,12 @@ for (let button of buttons) {
     tabs.appendChild(btn);
 }
 header.appendChild(tabs);
+// let address = document.createElement('div')
+// address.setAttribute('class', 'address')
+// address.textContent = `963 Amsterdam Ave, New York, NY 10025`
+// header.appendChild(address);
 
+//adding the restaurant icon
 let content = document.querySelector('#content');
 let holder = document.createElement('div');
 const myIcon = new Image();
@@ -27,14 +32,8 @@ holder.setAttribute('id','left');
 holder.appendChild(myIcon)
 content.appendChild(holder);
 
-//welcome tab module to be imported
-let container = document.createElement('div');
-const chicken = new Image();
-chicken.src = chickenR;
-// chicken.style.width = '100px';
-// chicken.style.height = 'auto';
-container.appendChild(chicken);
-container.setAttribute('id','container');
-// container.textContent = `With some of the most delicious combinations of ingredients, Zaad has something for everyone to enjoy.
-// Loved by locals and traveling foodies alike, now is the perfect time for you to join us!`
-content.appendChild(container);
+//adding the footer
+let footer = document.querySelector('#footer');
+footer.textContent = `963 Amsterdam Ave, New York, NY 10025`
+
+welcomeTab();

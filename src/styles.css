@@ -43,6 +43,7 @@ body{
     margin: 0;
     display:flex;
     flex-direction: column;
+    /* justify-content: space-between; */
     /* box-sizing: border-box; */
     color: var(--lighter_blue);
     background: var(--lighter_blue);
@@ -50,7 +51,8 @@ body{
 }
 #header{
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
+    align-items: flex-end;
     background-color: white;
     margin: 0;
     height: 68px;
@@ -97,12 +99,30 @@ button{
 }
 #container{
     display: flex;
+    flex-direction: column;
     border-top: solid 2px var(--lighter_blue);
-    background-color: white;
-    width: 50%;
+    width: 580px;
+    gap: 20px;
     height: 270px;
     padding: 60px 14px;
+    padding: 0px 1px;
     /* font-weight: 300; */
     font-size: large;
-    color: var(--dark_blue);
+    color: white;
+}
+.food_pic{
+    display:flex;
+    height:144%;
+    /* width: auto; */
+    flex-grow: 0;
+    /* margin:0; */
+}
+#footer{
+    display:flex;
+    color: white;
+    font-size: small;
+    padding: 20px 234px;
+}
+.address{
+    margin: 10px;
 }
