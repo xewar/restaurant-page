@@ -1,5 +1,7 @@
 //welcome tab module to be imported
-import chickenR from './images/BW/chicken.jpg';
+// import chickenR from './images/BW/chicken.jpg';
+import chickenR from './images/chicken.png';
+
 
 function welcomeTab() {
     let container = document.createElement('div');

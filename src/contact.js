@@ -1,4 +1,7 @@
 import falafelPic from './images/falafel.jpg'
+import drinks from './images/laziza.jpg';
+import soup from './images/lentil_soup.jpg';
+import baklava from './images/baklava.jpg';
 
 const contactTab = () => {
     let container = document.createElement('div');
@@ -17,13 +20,23 @@ const contactTab = () => {
     cateringText.setAttribute('class','catering');
     container.appendChild(cateringText);
     
-
+    
      //adding an image
-     const falafel = new Image();
-     falafel.src = falafelPic;
-     let image_div = document.createElement('div');
-     image_div.appendChild(falafel);
-     image_div.setAttribute('class','food_pic');
+     let image_container = document.createElement('div');
+     image_container.setAttribute('class','image_container')
+     let addPicture = (importedImg) => {
+        const image = new Image();
+        image.src = importedImg;
+        let image_div = document.createElement('div');
+        image_div.appendChild(image);
+        image_div.setAttribute('class','small_food_pic');
+        image_container.appendChild(image_div);
+     }
+     let images = [falafelPic,soup, baklava];
+     for (let image of images){
+         addPicture(image)
+     }
+     container.appendChild(image_container);
      content.appendChild(container);
 }
 
