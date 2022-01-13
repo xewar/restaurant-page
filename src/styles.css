@@ -165,6 +165,7 @@ button{
 .home_text, .catering{
     display: flex;
     margin: 14px;
+    font-weight:300;
 }
 
 #footer{

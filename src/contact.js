@@ -21,7 +21,7 @@ const contactTab = () => {
     container.appendChild(cateringText);
     
     
-     //adding an image
+     //adding images
      let image_container = document.createElement('div');
      image_container.setAttribute('class','image_container')
      let addPicture = (importedImg) => {

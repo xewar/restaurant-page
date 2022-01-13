@@ -8,7 +8,7 @@ renderPage();
 welcomeTab();
 //Switching between tabs
 const switchTab = (btn) => {
-    //delete content
+    //delete existing content
     let container = document.querySelectorAll('.container');
     container[0].remove();
     if (btn.textContent === 'Welcome') {
