@@ -11,6 +11,7 @@ const switchTab = (btn) => {
     //delete existing content
     let container = document.querySelectorAll('.container');
     container[0].remove();
+    //updating the content based on the tab clicked
     if (btn.textContent === 'Welcome') {
         welcomeTab()
     } else if (btn.textContent === 'Menu') {

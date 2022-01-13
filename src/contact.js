@@ -1,5 +1,5 @@
 import falafelPic from './images/falafel.jpg'
-import drinks from './images/laziza.jpg';
+// import drinks from './images/laziza.jpg';
 import soup from './images/lentil_soup.jpg';
 import baklava from './images/baklava.jpg';
 

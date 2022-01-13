@@ -2,11 +2,9 @@
 // import chickenR from './images/BW/chicken.jpg';
 import chickenR from './images/chicken.png';
 
-
 function welcomeTab() {
     let container = document.createElement('div');
     container.setAttribute('class','container');
-    let box = document.createElement('box')
 
     //adding an image
     const chicken = new Image();

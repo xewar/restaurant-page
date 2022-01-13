@@ -64,11 +64,11 @@ div{
 h1 {
     display: flex;
     padding-top: 3px;
+    /* padding-right: 8px; */
     margin: 0;
     font-weight: 900;
     text-transform: uppercase;
     font-size: 60px;
-    /* margin-left: 20px; */
 }
 #tabs{
     display: flex;
@@ -120,10 +120,10 @@ button{
 }
 #menu{
     display:flex;
+    justify-content: space-evenly;
     flex-wrap: wrap;
-    gap: 30px;
-    margin: 14px;
-
+    gap: 20px;
+    margin-top: 24px;
 }
 .menuItem{
     font-weight: 300;
@@ -165,7 +165,6 @@ button{
 .home_text, .catering{
     display: flex;
     margin: 14px;
-    font-weight:300;
 }
 
 #footer{
