@@ -52,6 +52,7 @@ body{
 div{
     /* display: flex; */
 }
+
 #header{
     display: flex;
     flex-direction: column;
@@ -64,7 +65,7 @@ div{
 h1 {
     display: flex;
     padding-top: 3px;
-    /* padding-right: 8px; */
+    padding-right: 8px;
     margin: 0;
     font-weight: 900;
     text-transform: uppercase;
